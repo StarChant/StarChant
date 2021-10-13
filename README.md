@@ -4,9 +4,9 @@ To verify StarChant's RNG, we establish the following rules:
 
 1. The original metadata order will be committed here as metadata-prerandomized. This was uploaded on **10/12/2021, at 9:52 PM PST**.
 2. StarChant will draw a random seed using Chainlink VRF and store it in the randomSeed variable. You will see this here: https://etherscan.io/tx/0x764fc380558df0d719306c5290a1f520cdda0803939854020a94801642220f7b - This transaction was submitted at **10/12/2021, at 10:04 PM PST**. Thus, we cannot have pre-ordered the list to give us favorable outcomes.
-
-3. Every 24 hours, until the collection is revealed, we will take a slice of the original metadata and reshuffle it using the random seed. We then append this to master revealed list.
-4. You will be able to replicate the exact re-shuffle using the provided scripts in the repository. We are running the shuffle script on Python 3.8.8 on Windows 10.
+3. The seed was set to: "87314876641541055251095431619250856243264627284949971051498783260561907368646"
+4. Every 24 hours, until the collection is revealed, we will take a slice of the original metadata and reshuffle it using the random seed. We then append this to master revealed list.
+5. You will be able to replicate the exact re-shuffle using the provided scripts in the repository. We are running the shuffle script on Python 3.8.8 on Windows 10.
 
 
 Even though we know the original metadata order, since no one can predict what the randomSeed variable will be, it guarantees fair randomization for everyone.
