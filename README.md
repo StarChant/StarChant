@@ -20,3 +20,7 @@ https://discord.gg/4AYEwBuP8F
 https://etherscan.io/address/0x0431C86958c03d8dB757E176ed9f10F3B9A79ec5
 
 https://opensea.io/collection/starchant
+
+**Developer Notes:**
+
+As of 10/13, it looks like we accidentally skipped over the 1st entry in the original prerandomized metadata. To fix this, we will be appending it to the last set of metadata generation, whenever applicable.
